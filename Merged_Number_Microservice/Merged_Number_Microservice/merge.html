@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merge Unique Integers</title>
+</head>
+<body>
+    <h1>Merge Unique Integers</h1>
+    <form method="post" action="{% url 'merge' %}">
+        {% csrf_token %}
+        <label for="numbers">Enter numbers separated by commas:</label><br>
+        <input type="text" id="numbers" name="numbers[]" required><br>
+        <input type="submit" value="Merge">
+    </form>
+</body>
+</html>
